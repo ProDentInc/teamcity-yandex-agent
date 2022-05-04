@@ -2,13 +2,22 @@
 
 TeamCity integration with Yandex Compute Engine which allows using cloud instances to scale the pool of build agents.
 
+## Installation from sources
+
+### Requirements
+
+- Installed `OpenJDK 11`;
+- The `JAVA_HOME` environment variable is set to the path to the OpenJDK 11 root directory (where the `/bin` directory is located).
+
+### Build steps
+
+1. Run `gradlew build` at sources root;
+2. Go to `/yandex-cloud-server/build/distributions` and find release-file `cloud-yandex.zip`;
+3. Upload release file to your Teamcity Installation.
+
 ## Compatibility
 
 The plugin is compatible with TeamCity 10.0.x and greater.
-
-## Installation
-
-You can [download the plugin](https://plugins.jetbrains.com/plugin/12619-yandex-cloud-agents) and install it as an [additional TeamCity plugin](https://confluence.jetbrains.com/display/TCDL/Installing+Additional+Plugins).
 
 ## Configuration
 
